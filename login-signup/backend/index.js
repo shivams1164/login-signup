@@ -11,14 +11,15 @@ const PORT = process.env.PORT || 8080;
 
 
 app.get('/ping',(req, res)=>{
-    res.send('pong');
+    res.send('pinggg');
 })
 
 app.use(bodyParser.json());
 app.use(cors());
 
 
-app.use('/auth', AuthRouter)
+app.use('/auth', AuthRouter);
+
 
 app.listen(PORT, () => {
     console.log(`Server is runnig on ${PORT}`);
